@@ -1,0 +1,81 @@
+.timeline-container {
+     max-width: 900px;
+     margin: auto;
+     padding: 50px 20px;
+}
+
+.timeline-title {
+     text-align: center;
+     margin-bottom: 40px;
+     font-size: 2.2rem;
+     color: #333;
+}
+
+.timeline {
+     display: flex;
+     flex-wrap: wrap;
+     /* allow items to wrap like grid */
+     gap: 20px;
+     /* space between squares */
+     justify-content: center;
+}
+
+.timeline-item {
+     position: relative;
+     width: 250px;
+     /* fixed width */
+     aspect-ratio: 1 / 1;
+     /* square shape */
+}
+
+.timeline-icon {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     color: white;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 1.5rem;
+     position: absolute;
+     top: -25px;
+     /* half of icon height */
+     left: 50%;
+     transform: translateX(-50%);
+     z-index: 1;
+}
+
+.timeline-content {
+     background: #f8f9fa;
+     height: 100%;
+     /* full height of square */
+     border-radius: 12px;
+     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+     text-align: center;
+     transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-content:hover {
+     transform: translateY(-5px);
+     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-content h3 {
+     margin: 0 0 10px 0;
+     color: #333;
+}
+
+.timeline-content .school {
+     font-weight: 500;
+     color: #555;
+}
+
+.timeline-content p {
+     margin: 0;
+     color: #666;
+}
